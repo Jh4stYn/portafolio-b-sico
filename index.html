@@ -62,31 +62,36 @@
 
   <main class="main">
     <section id="hero" class="section hero">
-      <div class="container">
-        <h1 class="hero__title">Hola, <span class="hero__animation">👋🏻</span> soy<br> <span class="hero__name">Jh4stYn</span></h1>
-        <p class="hero__description">
-          <span id="typing"></span>         
-        </p>
-
-        <ul class="social">
-          <li class="social__item">
-            <a href="#" class="social__link" aria-label="linkedin">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a href="#" class="social__link" aria-label="github">
-              <i class="bx bxl-github"></i>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a href="#" class="social__link" aria-label="twitter">
-              <i class="bx bxl-twitter"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="container hero__container">
+        <div class="hero__content-img">
+          <img src="/assets/img/profile.jpg" class="hero__img" alt="profile">
+        </div>
+        <div class="hero__content-body">
+          <h1 class="hero__title">Hola, <span class="hero__animation">👋🏻</span> soy<br> <span class="hero__name">Jh4stYn</span></h1>
+          <p class="hero__description">
+            <span id="typing"></span>         
+          </p>
+  
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="linkedin">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+  
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="github">
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+  
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="twitter">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </section>
@@ -94,13 +99,74 @@
     <section id="about" class="section about">
       <div class="container">
         <h2 class="section section__title">Acerca de mi</h2>
+
+        <div class="about__content">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque animi quos ipsum reiciendis cum amet tempora vero modi magni, laborum, velit, maiores mollitia. Eius, ducimus. Itaque iure nam earum?</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque animi quos ipsum reiciendis cum amet tempora vero modi magni, laborum, velit, maiores mollitia. Eius, ducimus. Itaque iure nam earum?</p>
+        </div>
       </div>
     </section>
     
     <section id="skills" class="section skills">
       <div class="container">
         <h2 class="section section__title">Habilidades</h2>
-      </div>
+
+        <div class="skills__content">
+          <div class="skills__container">
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/html.svg" alt="html">
+              </div>
+              <span class="skills__text">HTML</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/css.svg" alt="css">
+              </div>
+              <span class="skills__text">CSS</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/javascript.svg" alt="javascript">
+              </div>
+              <span class="skills__text">JavaScript</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/git.svg" alt="git">
+              </div>
+              <span class="skills__text">Git</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="skills_subtitle">Habilidades Blandas</h3>
+            
+            <ul class="skills__list">
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Trabajo en Equipo</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Comunicación</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Adaptabilidad</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Resolución de problemas</span>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </div> 
     </section>
 
     <section id="projects" class="section projects">
@@ -120,6 +186,9 @@
 
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
   <script src="/assets/js/index.js"></script>
 
   
