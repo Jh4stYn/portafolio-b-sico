@@ -1,57 +1,128 @@
 <!DOCTYPE html>
-<html lang='es'>
-  <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Taller</title>
-    <link rel='stylesheet' href='assets/css/style.css'>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav container">
-        <a href="/" class="logo">
-          <i class='bx bxl-xing'></i>
-          <span>Name</span>
-        </a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="/" class="logo">
+        <i class='bx bxl-xing'></i>
+        <span>Jh4stYn</span>
+      </a>
 
-        <div id="menu" class="menu clase2 clase3">
-          <button type="button" id="btnClose" class="btn btn-close" aria-label="cerrar">
-            <i class='bx bx-x'></i>
-          </button>
+      <div id="menu" class="menu">
+        <button type="button" id="btnClose" class="btn btn-close" aria-label="cerrar">
+          <i class="bx bx-x"></i>
+        </button>
 
-          <ul class='menu__list'>
-            <li class='menu__item'>
-              <a href='#' class='menu__link'>Inicio</a>
-            </li>
-            <li class='menu__item'>
-              <a href='#' class='menu__link'>Acerca de Mí</a>
-            </li>
-            <li class='menu__item'>
-              <a href='#' class='menu__link'>Habilidades</a>
-            </li>
-            <li class='menu__item'>
-              <a href='#' class='menu__link'>Proyectos</a>
-            </li>
-            <li class='menu__item'>
-              <a href='#' class='menu__link'>Contacto</a>
-            </li>
-          </ul>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#hero" class="menu__link">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="menu__link">Acerca de Mi</a>
+          </li>
+          <li class="menu__item">
+            <a href="#skills" class="menu__link">Habilidades</a>
+          </li>
+          <li class="menu__item">
+            <a href="#projects" class="menu__link">Proyectos</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact" class="menu__link">Contacto</a>
+          </li>
+        </ul>
 
-          <a href='#' class="btn btn-resume">
-            Descargar C.V.
-          </a>
-        </div>
+        <a href="#" class="btn btn-resume">Descargar C.V.</a>    
+      </div>
 
+      <div class="btns">
         <button type="button" id="btnOpen" class="btn btn-open" aria-label="abrir">
           <i class='bx bx-menu'></i>
         </button>
-      </nav>
-    </header>
+  
+        <button type="button" id="btnTheme" class="btn btn-theme" aria-label="abrir">
+          <i class='bx bxs-moon'></i>
+        </button>
+
+        <button type="button" id="btnLang" class="btn btn-lang">
+          <a href="/en/index.html">En</a>
+        </button>
+        
+      </div>    
+      
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="section hero">
+      <div class="container">
+        <h1 class="hero__title">Hola, <span class="hero__animation">👋🏻</span> soy<br> <span class="hero__name">Jh4stYn</span></h1>
+        <p class="hero__description">
+          <span id="typing"></span>         
+        </p>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="linkedin">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="github">
+              <i class="bx bxl-github"></i>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="twitter">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section section__title">Acerca de mi</h2>
+      </div>
+    </section>
+    
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section section__title">Habilidades</h2>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section section__title">Proyectos</h2>
+      </div>
+    </section>
+    
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section section__title">Contacto</h2>
+      </div>
+    </section>
+
+  </main>
 
 
 
-    <script src="assets/js/index.js"></script>
-  </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="/assets/js/index.js"></script>
+
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
 </html>
