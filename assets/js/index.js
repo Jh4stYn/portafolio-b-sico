@@ -22,6 +22,7 @@ nav.addEventListener("click", function (event) {
     }
 })
 
+
 // BLACKMODE
 const body = document.body
 const ls = window.localStorage
@@ -50,6 +51,7 @@ btnTheme.addEventListener("click", function () {
     }
 })
 
+
 // Typing
 var typed = new Typed('#typing', {
     strings: ['Frontend Developer', 'Web Developer', 'Designer', 'Fullstack Developer'],
@@ -60,6 +62,7 @@ var typed = new Typed('#typing', {
     loopCount: Infinity,
 });
 
+
 // ScrollReveal
 const sr = new ScrollReveal ({
     origin: "top",
@@ -68,9 +71,42 @@ const sr = new ScrollReveal ({
     reset: true,
 })
 
-
 sr.reveal(".hero__content-img", {origin: "left", distance: "100px",}) 
 sr.reveal(".hero__content-body", {origin: "right", distance: "100px",}) 
 sr.reveal(".about p", {origin: "bottom", distance: "100px", duration: 2000}) 
 sr.reveal(".about p+p", {origin: "bottom", distance: "100px", duration: 2500}) 
 sr.reveal(".skills__content", {origin: "top", distance: "100px"})
+
+
+// ScrollSpy
+const hero = document.getElementById("hero") //0
+const about = document.getElementById("about") //1
+const skills = document.getElementById("skills") //2
+const projects = document.getElementById("projects") //3 
+const contact = document.getElementById("contact") //4
+
+const addActive = function(index){
+    for(const link of links){
+        link.classList.remove("active")
+    }
+    links[index].classList.add("active")
+}
+
+const checkElement = element =>
+    element.getBoundingClientRect().top > -1 &&
+    element.getBoundingClientRect().top < 200
+
+window.addEventListener("scroll", function () {
+    if(checkElement(hero)){
+        addActive(0)
+    }else if(checkElement(about)){
+        addActive(1)
+    }else if(checkElement(skills)){
+        addActive(2)
+    }else if(checkElement(projects)){
+        addActive(3)
+    }else if(checkElement(contact)){
+        addActive(4)
+    }
+})
+
