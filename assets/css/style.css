@@ -269,7 +269,7 @@ img {
 
 /* Hero */
 .hero {
-    background: linear-gradient(0deg, #0000008c, #00000047), url(/assets/img/herobg.gif);
+    background: linear-gradient(0deg, #0e0e0ea9, #33214299), url(/assets/img/herobg.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -395,6 +395,7 @@ transition: transform .5s;
 /* About */
 .about p{
     font-size: 1rem;
+    text-align: justify;
 }
 
 /* Skills */
@@ -435,6 +436,49 @@ transition: transform .5s;
     padding: 0;
 }
 
+/* Review */
+.review__carousel {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.review__elemento {
+    flex: 1 0 auto;
+    background-color:#3f3e3e4b;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+    display: grid;
+    gap: 50px;
+}
+
+.review__content {
+    max-width: 100%;
+    margin: 30px;
+    text-align: justify;
+}
+
+.review__name {
+    margin-top: 10px;
+}
+
+.review__img {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:auto;
+
+    min-height: 15rem;
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Contact */
 .contact__content {
     background: linear-gradient(0deg, #01010138, #00000046), url(/assets/img/formbg.gif);
@@ -453,6 +497,7 @@ transition: transform .5s;
 
 .contact__container {
     margin: auto;
+    color: #fff;
 }
 
 .contact__form {
@@ -473,7 +518,7 @@ transition: transform .5s;
 }
 
 .contact__link {
-    color: var(--txt-body);
+    color: #fff;
 }
 
 .contact__link i {
@@ -496,18 +541,20 @@ textarea {
     margin: 8px 0;
     max-width: 200px;
     max-height: 300px;
-    background-color: #ffffff8d;
+    background-color: #ffffff73;
     border-top: 2px solid #000;
     border-left: 2px solid #000;
     border-bottom: transparent;
     border-right: transparent;
+    border-radius: 8px;
 }
 
 input {
-    margin: 8px 0 0 1px;
-    background-color: #ffffff8d;
+    margin: 8px 0 10px 1px;
+    background-color: #ffffff73;
     border-bottom: transparent;
     border-right: transparent;
+    border-radius: 6px;
 }
 
 .enviar {
@@ -574,11 +621,7 @@ input {
 
     .contact__content {
         grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));     
-    }
-
-    input {
-        margin-bottom: 10px;     
-    }   
+    }  
 }
 
 @media (min-width: 1024px) {
