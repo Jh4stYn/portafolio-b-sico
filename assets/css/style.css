@@ -487,7 +487,13 @@ transition: transform .5s;
     color: var(--color-primary);
 }
 
+.contact__pin {
+    display: flex;
+    gap: 4px;
+}
+
 textarea {
+    margin: 8px 0;
     max-width: 200px;
     max-height: 300px;
     background-color: #ffffff8d;
@@ -498,10 +504,17 @@ textarea {
 }
 
 input {
-    margin: 8px 0;
+    margin: 8px 0 0 1px;
     background-color: #ffffff8d;
     border-bottom: transparent;
     border-right: transparent;
+}
+
+.enviar {
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: transparent;
 }
 
 
@@ -562,7 +575,10 @@ input {
     .contact__content {
         grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));     
     }
-    
+
+    input {
+        margin-bottom: 10px;     
+    }   
 }
 
 @media (min-width: 1024px) {

@@ -202,19 +202,31 @@
           <div class="contact__form">
             <h3>Envíame un mensaje</h3>
             <form action="https://formsubmit.co/jhastyn57@gmail.com" method="POST">
-              <label for="nombre">Nombre</label><br>
+              <div class="contact__pin">
+                <i class='bx bxs-user'></i>
+                <label for="nombre">Nombre</label><br>
+              </div> 
               <input type="text" name="name" required> <br>
-              
-              <label for="email">Correo Electronico</label><br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-envelope'></i>
+                <label for="email">Correo Electronico</label><br>
+              </div>
               <input type="email" name="email" pattern="/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;" required><br>
-              
-              <label for="subject">Asunto</label><br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-message-minus'></i>
+                <label for="subject">Asunto</label><br>              
+              </div>
               <input type="text" name="subject" required><br>
-              
-              <label for="comments">Mensaje</label><br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-comment-detail'></i>
+                <label for="comments">Mensaje</label><br>                
+              </div>
               <textarea name="comments" cols="20" rows="5" required></textarea><br>
               
-              <input type="submit" value="Enviar">
+              <input type="submit" value="Enviar" class="enviar">
               
               <input type="hidden" name="_next" value="https://portafolio-jjpr-basic.netlify.app/">
             </form>
@@ -243,10 +255,8 @@
             </ul>
           </div>
         </div>
-
       </div>
     </section>
-
   </main>
 
   <footer>
