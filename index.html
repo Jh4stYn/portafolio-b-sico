@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="nav container">
       <a href="/" class="logo">
-        <i class='bx bxl-xing'></i>
+        <i class='bx bxs-invader'></i>
         <span>Jh4stYn</span>
       </a>
 
@@ -51,9 +51,9 @@
           <i class='bx bxs-moon'></i>
         </button>
 
-        <button type="button" id="btnLang" class="btn btn-lang">
+        <div class="btn-lang">
           <a href="/en/index.html">En</a>
-        </button>
+        </div>
         
       </div>    
       
@@ -198,13 +198,62 @@
     <section id="contact" class="section contact">
       <div class="container">
         <h2 class="section section__title">Contacto</h2>
+        <div class="contact__content">
+          <div class="contact__form">
+            <h3>Envíame un mensaje</h3>
+            <form action="https://formsubmit.co/jhastyn57@gmail.com" method="POST">
+              <label for="nombre">Nombre</label><br>
+              <input type="text" name="name" required> <br>
+              
+              <label for="email">Correo Electronico</label><br>
+              <input type="email" name="email" pattern="/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;" required><br>
+              
+              <label for="subject">Asunto</label><br>
+              <input type="text" name="subject" required><br>
+              
+              <label for="comments">Mensaje</label><br>
+              <textarea name="comments" cols="20" rows="5" required></textarea><br>
+              
+              <input type="submit" value="Enviar">
+              
+              <input type="hidden" name="_next" value="https://portafolio-jjpr-basic.netlify.app/">
+            </form>
+          </div>
+
+          <div class="contact__container">
+            <h3>Mis Redes Sociales</h3>
+            <ul class="contact__redes">
+              <li class="contact__item">
+                <a href="https://www.instagram.com/jhasstt?igsh=MWVmdXY5amJjcGZpaQ==" class="contact__link" aria-label="instagram">
+                  <i class='bx bxl-instagram-alt'></i>
+                </a>
+              </li>
+    
+              <li class="contact__item">
+                <a href="https://wa.me/987645321" class="contact__link" aria-label="whatsapp">
+                  <i class='bx bxl-whatsapp'></i>
+                </a>
+              </li>
+    
+              <li class="contact__item">
+                <a href="https://www.tiktok.com/@jh4styn?is_from_webapp=1&sender_device=pc" class="contact__link" aria-label="tiktok">
+                  <i class='bx bxl-tiktok'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
   </main>
 
+  <footer>
+    
+  </footer>
 
-  
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>

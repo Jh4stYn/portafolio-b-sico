@@ -73,8 +73,8 @@ const sr = new ScrollReveal ({
 
 sr.reveal(".hero__content-img", {origin: "left", distance: "100px",}) 
 sr.reveal(".hero__content-body", {origin: "right", distance: "100px",}) 
-sr.reveal(".about p", {origin: "bottom", distance: "100px", duration: 2000}) 
-sr.reveal(".about p+p", {origin: "bottom", distance: "100px", duration: 2500}) 
+sr.reveal(".about p", {origin: "bottom", distance: "100px", duration: 2300}) 
+sr.reveal(".about p+p", {origin: "bottom", distance: "90px", duration: 2500}) 
 sr.reveal(".skills__content", {origin: "top", distance: "100px"})
 
 
