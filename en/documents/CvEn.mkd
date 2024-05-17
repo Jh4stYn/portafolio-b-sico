@@ -1,0 +1,38 @@
+# Jhastyn Payehuanca Riquelme
+
+## Personal Information
+
+Phone: +51 987645321                    
+Email: jhastyn57@gmail.com
+
+## About Me
+
+Hello! I'm Jhastyn, a third-year student of Systems Engineering at the National University of San Agustín, located in Arequipa, Peru. Since I was young, I've always felt a strong fascination for technology and its power to transform the world around us. Currently, I'm focused on expanding my knowledge and skills in the field of web development.
+
+I consider myself a curious and creative person, committed to my professional growth and the constant pursuit of challenges that allow me to learn and evolve.
+
+## Skills
+
+### Technical Skills
+
+- HTML
+- CSS
+- JavaScript
+- Git
+
+### Soft Skills
+
+- Effective Communication
+- Teamwork
+- Problem Solving
+- Adaptability
+- Time Management
+- Empathy
+- Critical Thinking
+- Creativity
+- Continuous Learning
+
+## Education
+
+- National University of San Agustín - Systems Engineering (2020 - Present)
+- Academlo (2024 - Present)
