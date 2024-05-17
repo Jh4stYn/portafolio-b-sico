@@ -82,7 +82,7 @@ sr.reveal(".skills__content", {origin: "top", distance: "100px"})
 const hero = document.getElementById("hero") //0
 const about = document.getElementById("about") //1
 const skills = document.getElementById("skills") //2
-const projects = document.getElementById("projects") //3 
+const review = document.getElementById("review") //3 
 const contact = document.getElementById("contact") //4
 
 const addActive = function(index){
@@ -103,7 +103,7 @@ window.addEventListener("scroll", function () {
         addActive(1)
     }else if(checkElement(skills)){
         addActive(2)
-    }else if(checkElement(projects)){
+    }else if(checkElement(review)){
         addActive(3)
     }else if(checkElement(contact)){
         addActive(4)
