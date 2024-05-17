@@ -3,17 +3,17 @@
     --bg-body:#fff;
     --txt-body:#000;
     --bg-nav: #fff;
-    --color-primary:#0da4a4f1;
-    --color-menu:#6d7070d7;
-    --btn-color:#000;
+    --color-primary:#0ae4e4f7;
+    --color-menu:#1f1f1ff1;
+    --txt-menu: #bbb7b7ca;
+    --color-carousel : #00ffff0e;
 }
 
 body.dark {
     --bg-body:#222;
-    --txt-body:#f0f0f0;
+    --txt-body:#fff;
     --bg-nav: #111;
-    --btn-color:#fff;
-    --color-menu:#2a2b2bf1;
+    --color-carousel : #035f5f08;
 }
 
 html {
@@ -65,7 +65,7 @@ img {
 }
 
 .btn {
-    color: var(--btn-color);
+    color: var(--txt-body);
     border: none;
     padding: .75em 1.2em;
     cursor: pointer;
@@ -176,9 +176,9 @@ img {
         flex-direction: column;
         gap: 30px;
     }
-
+    
     .menu__link {
-        color: #e9e8e8b9;
+        color: var(--txt-menu);
         font-size: 24px;
         font-weight: 900;
         text-decoration: none;
@@ -186,7 +186,7 @@ img {
     }
 
     .menu__link:hover {
-        color: #fff;
+        color: var(--txt-body);
         font-size: 30px;
     }
 
@@ -201,9 +201,9 @@ img {
 
     .btn-resume {
         background-color: transparent;
-        border: 2.5px solid #ffffffda;
+        border: 2.5px solid var(--txt-menu);
         border-radius: 10px;
-        color: #ffffffc8;
+        color: var(--txt-menu);
         font-weight: 600;
         text-decoration: none;
         width: max-content;
@@ -273,7 +273,7 @@ img {
 
 /* Hero */
 .hero {
-    background: linear-gradient(0deg, #0e0e0ea9, #33214299), url(/assets/img/herobg.gif);
+    background: linear-gradient(0deg, #00000093, #490f3e78), url(/assets/img/herobg.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -400,6 +400,9 @@ transition: transform .5s;
 .about p{
     font-size: 1rem;
     text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Skills */
@@ -442,8 +445,11 @@ transition: transform .5s;
 
 /* Review */
 .review__carousel {
+    background-color:var(--color-carousel);
+    border-radius: 10px;
     width: 70%;
     margin: auto;
+
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -451,10 +457,8 @@ transition: transform .5s;
 
 .review__elemento {
     flex: 1 0 auto;
-    background-color:#3f3e3e4b;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
 
     display: grid;
     gap: 50px;
@@ -467,6 +471,8 @@ transition: transform .5s;
 }
 
 .review__name {
+    font-weight: 700;
+    font-style: oblique;
     margin-top: 10px;
 }
 
@@ -485,7 +491,7 @@ transition: transform .5s;
 
 /* Contact */
 .contact__content {
-    background: linear-gradient(0deg, #01010138, #00000046), url(/assets/img/formbg.gif);
+    background: linear-gradient(0deg, #00000000, #000000cf), url(/assets/img/formbg.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
@@ -505,6 +511,7 @@ transition: transform .5s;
 }
 
 .contact__form {
+    color: #fff;
     margin: auto;
     padding-bottom:9px;
 }
@@ -519,6 +526,10 @@ transition: transform .5s;
     width: 100%;
     justify-content:center;
     gap: 20px;
+}
+
+.contact__item {
+    animation: saludo-animation 3.5s infinite;
 }
 
 .contact__link {
@@ -561,7 +572,9 @@ input {
     border-radius: 6px;
 }
 
-.enviar {
+.send {
+    color: #fff;
+    background-color: #513a4c73;
     font-size: 13px;
     font-weight: 600;
     border-radius: 3px;
@@ -705,6 +718,7 @@ input {
     .skills__content {
         flex-direction: row;
         align-items: center;
+        gap: 90px;
     }
 
     .skills__container {
