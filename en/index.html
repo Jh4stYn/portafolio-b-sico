@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taller</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="nav container">
       <a href="/" class="logo">
-        <i class='bx bxl-xing'></i>
+        <i class='bx bxs-invader'></i>
         <span>Jh4stYn</span>
       </a>
 
@@ -23,23 +23,23 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">Inicio</a>
+            <a href="#hero" class="menu__link">Home</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Acerca de Mi</a>
+            <a href="#about" class="menu__link">About Me</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Habilidades</a>
+            <a href="#skills" class="menu__link">Skills</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Proyectos</a>
+            <a href="#review" class="menu__link">Reviews</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Contacto</a>
+            <a href="#contact" class="menu__link">Contact</a>
           </li>
         </ul>
 
-        <a href="#" class="btn btn-resume">Descargar C.V.</a>    
+        <a href="#" class="btn btn-resume">Download Resume</a>    
       </div>
 
       <div class="btns">
@@ -51,13 +51,243 @@
           <i class='bx bxs-moon'></i>
         </button>
 
-        <button type="button" id="btnLang" class="btn btn-lang">
-          <a href="/index.html">Es</a>
-        </button>
+        <div class="btn-lang">
+          <a href="/en/index.html">En</a>
+        </div>
+        
       </div>    
       
     </nav>
   </header>
+
+  <main class="main">
+    <section id="hero" class="section hero">
+      <div class="container hero__container">
+        <div class="hero__content-img">
+          <img src="/assets/img/profile.jpeg" class="hero__img" alt="profile">
+        </div>
+        <div class="hero__content-body">
+          <h1 class="hero__title">Hello, <span class="hero__animation">👋🏻</span> i'm<br> <span class="hero__name">Jh4stYn</span></h1>
+          <p class="hero__description">
+            <span id="typing"></span>         
+          </p>
+  
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="linkedin">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+  
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="github">
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+  
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="twitter">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section section__title">About me</h2>
+
+        <div class="about__content">
+          <p>Hello! I'm Jhastyn, a third-year student of Systems Engineering at the National University of San Agustín, located in Arequipa, Peru. Since I was young, I've always felt a strong fascination for technology and its power to transform the world around us. Currently, I'm focused on expanding my knowledge and skills in the field of web development, which is why I am actively participating in the Academlo bootcamp.</p>
+
+          <p>I consider myself a curious and creative person, committed to my professional growth and the constant pursuit of challenges that allow me to learn and evolve. I'm excited about what the future holds for me in my journey as a software developer and I hope to share my passion and achievements with you through my portfolio.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section section__title">Skills</h2>
+
+        <div class="skills__content">
+          <div class="skills__container">
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/html.svg" alt="html">
+              </div>
+              <span class="skills__text">HTML</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/css.svg" alt="css">
+              </div>
+              <span class="skills__text">CSS</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/javascript.svg" alt="javascript">
+              </div>
+              <span class="skills__text">JavaScript</span>
+            </div>
+
+            <div class="skills__card">
+              <div class="skills__icon">
+                <img src="/assets/icons/git.svg" alt="git">
+              </div>
+              <span class="skills__text">Git</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="skills_subtitle">Soft Skills</h3>
+            
+            <ul class="skills__list">
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Effective communication</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Teamwork</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Problem solving</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Adaptability</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Time management</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Empathy</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Critical thinking</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Creativity</span>
+              </li>
+              <li class="skills__item">
+                <i class="bx bx-check"></i>
+                <span>Continuous learning</span>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </div> 
+    </section>
+
+    <section id="review" class="section review">
+      <div class="container">
+        <h2 class="section section__title">Reviews</h2>
+        <div class="review__carousel">
+          <div class="review__elemento">
+            <div class="review__content">
+              <div class="review__img">
+                <img src="/assets/img/partner1.jpeg" alt="partner1">
+              </div>
+              <div class="review__name">Ana García </div>
+              <p>I had the pleasure of working with Jhastyn on several projects, and I must say that his contribution was invaluable. Jhastyn demonstrated an exceptional ability to understand the project requirements and translate them into clean and efficient code. His proactive approach and problem-solving skills made him an indispensable member of our team. Furthermore, his positive attitude and willingness to collaborate with other colleagues created a productive and pleasant work environment. I would definitely recommend Jhastyn as a talented and committed programmer.</p> 
+            </div>
+          </div>
+          <div class="review__elemento">
+            <div class="review__content">
+              <div class="review__img">
+                <img src="/assets/img/partner2.jpeg" alt="partner2">
+              </div>
+              <div class="review__name">Luis Pérez</div>
+              <p>Working with Jhastyn was an exceptional experience. His deep technical knowledge and ability to tackle complex challenges were crucial to the project's success. What impressed me the most about Jhastyn was his ability to think creatively and find innovative solutions to technical problems. Additionally, his clear communication and willingness to listen and collaborate with other team members were highlights of his work. Jhastyn is undoubtedly a valuable asset to any development team, and I would recommend him without hesitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section section__title">Contact</h2>
+        <div class="contact__content">
+          <div class="contact__form">
+            <h3>Send me a message</h3>
+            <form action="https://formsubmit.co/jhastyn57@gmail.com" method="POST">
+              <div class="contact__pin">
+                <i class='bx bxs-user'></i>
+                <label for="nombre">Name</label><br>
+              </div> 
+              <input type="text" name="name" required> <br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-envelope'></i>
+                <label for="email">Email</label><br>
+              </div>
+              <input type="email" name="email" pattern="/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;" required><br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-message-minus'></i>
+                <label for="subject">Subject</label><br>              
+              </div>
+              <input type="text" name="subject" required><br>
+
+              <div class="contact__pin">
+                <i class='bx bxs-comment-detail'></i>
+                <label for="comments">Message</label><br>                
+              </div>
+              <textarea name="comments" cols="20" rows="5" required></textarea><br>
+              
+              <input type="submit" value="Enviar" class="enviar">
+              
+              <input type="hidden" name="_next" value="https://portafolio-jjpr-basic.netlify.app/">
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+          </div>
+
+          <div class="contact__container">
+            <h3>My Social Media</h3>
+            <ul class="contact__redes">
+              <li class="contact__item">
+                <a href="https://www.instagram.com/jhasstt?igsh=MWVmdXY5amJjcGZpaQ==" class="contact__link" aria-label="instagram">
+                  <i class='bx bxl-instagram-alt'></i>
+                </a>
+              </li>
+    
+              <li class="contact__item">
+                <a href="https://wa.me/987645321" class="contact__link" aria-label="whatsapp">
+                  <i class='bx bxl-whatsapp'></i>
+                </a>
+              </li>
+    
+              <li class="contact__item">
+                <a href="https://www.tiktok.com/@jh4styn?is_from_webapp=1&sender_device=pc" class="contact__link" aria-label="tiktok">
+                  <i class='bx bxl-tiktok'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
   <script src="/assets/js/index.js"></script>
 
