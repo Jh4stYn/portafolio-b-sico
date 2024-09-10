@@ -38,7 +38,7 @@ Me considero una persona curiosa y creativa, comprometida con mi crecimiento pro
 
 ## Educación
 
-- Universidad Nacional de San Agustín - Ingeniería de Sistemas (2020 - Presente)
+- Universidad Nacional de San Agustín - Ingeniería de Sistemas (2022 - Presente)
 - Academlo (2024 - Presente)
 
 <!-- ## Certificaciones y Cursos
