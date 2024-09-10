@@ -2,8 +2,8 @@
 
 ## Información Personal
 
-Teléfono: +51 987645321                    
-Correo electrónico: jhastyn57@gmail.com
+Teléfono: +51 9********                  
+Correo electrónico: j********@gmail.com
 
 ## Acerca de Mí
 
